@@ -13,6 +13,3 @@ def extract_text(pdf_folder):
             texts.append(text)
             filenames.append(filename)
     return filenames, texts
-
-# Extract text from PDFs
-filenames, texts = extract_text(PDF_FOLDER)
