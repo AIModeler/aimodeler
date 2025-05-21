@@ -1,7 +1,7 @@
 import tiktoken
 
-MAX_TOKENS = 1024
-OVERLAP = 100
+MAX_TOKENS = 512
+OVERLAP = 64
 TOKENIZER = tiktoken.encoding_for_model("text-embedding-ada-002")
 
 def chunk_text(filenames, documents, max_tokens=MAX_TOKENS, overlap=OVERLAP):
