@@ -5,7 +5,7 @@ setup(
     version='0.4',
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    install_requires=["PyMuPDF"],
+    install_requires=["PyMuPDF", "tiktoken"],
     include_package_data=True,
     author='Alexander Brown',
     author_email='ajbrownt@gmail.com',
