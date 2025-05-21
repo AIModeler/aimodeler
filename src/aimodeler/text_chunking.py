@@ -10,7 +10,7 @@ def chunk_text(filenames, documents, max_tokens=MAX_TOKENS, overlap=OVERLAP):
     sources = []
     
     for idx, document in enumerate(documents):
-        # Tokenize the text
+
         tokens = TOKENIZER.encode(document)
         
         source = filenames[idx] if filenames else f"document_{idx}"
