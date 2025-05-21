@@ -8,11 +8,11 @@ def extract_text(pdf_folder):
     filenames, texts = [], []
     for filename in os.listdir(pdf_folder):
         if filename.endswith(".pdf"):
-            doc = fitz.open(os.path.join(pdf_folder, filename))
-            text = "\n".join(page.get_text() for page in doc)
+            document = fitz.open(os.path.join(pdf_folder, filename))
+            text = "\n".join(page.get_text() for page in document)
             texts.append(text)
             filenames.append(filename)
     return filenames, texts
 
 # Extract text from PDFs
-filenames, documents = extract_text(PDF_FOLDER)
+filenames, texts = extract_text(PDF_FOLDER)
