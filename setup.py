@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='AIModeler',
-    version='0.91',
+    version='0.92',
     package_dir={"": "src"},
     packages=find_packages(where="src"),
     install_requires=["PyMuPDF", "tiktoken"],
