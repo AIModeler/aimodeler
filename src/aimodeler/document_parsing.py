@@ -5,7 +5,9 @@ PDF_FOLDER = "pdfs"
 
 # Function to extract text from PDFs
 def extract_text(pdf_folder):
+    
     filenames, documents = [], []
+    
     for filename in os.listdir(pdf_folder):
         if filename.endswith(".pdf"):
             document = fitz.open(os.path.join(pdf_folder, filename))
