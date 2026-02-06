@@ -2,13 +2,13 @@ import os
   
 def object_storage():
   import boto3
-
+  
   aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
-
+  
   aws_secret_access_key = os.getenv("AWS_SECRET_ACCESS_KEY")
-
+  
   bucket_name = "aimodeler-demo-llm-documents"
-
+  
   document_folder = 'documents'
   os.makedirs(document_folder, exist_ok=True)
 
