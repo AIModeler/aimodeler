@@ -1,6 +1,7 @@
 import os
-  
+
 def object_storage():
+
   import boto3
   
   aws_access_key_id = os.getenv("AWS_ACCESS_KEY_ID")
