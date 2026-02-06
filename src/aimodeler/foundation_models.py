@@ -1,6 +1,6 @@
 import os
 
-def chatgpt_model:
+def chatgpt_model():
 
   from openai import OpenAI
   import tiktoken
